@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.startActivity
+import com.google.android.gms.tasks.Task
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -32,9 +33,9 @@ class LoginActivity : AppCompatActivity() {
 
     private val TAG = "LoginActivity"
 
-    private var auth: FirebaseAuth = FirebaseAuth.getInstance()
-
     lateinit var firestoreService: FirestoreService
+    //Access module autentication
+    private var auth: FirebaseAuth = FirebaseAuth.getInstance();
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,15 +43,13 @@ class LoginActivity : AppCompatActivity() {
         firestoreService = FirestoreService(FirebaseFirestore.getInstance())
     }
 
-
     fun onStartClicked(view: View) {
         view.isEnabled = false
         auth.signInAnonymously()
             .addOnCompleteListener { task ->
-                if (task.isSuccessful) {
+                if (task.isSuccessful) {                                                                //Autentication Acept
                     val username = username.text.toString()
                     firestoreService.findUserById(username, object : Callback<User> {
-
                         override fun onSuccess(result: User?) {
                             if (result == null) {
                                 val user = User()
