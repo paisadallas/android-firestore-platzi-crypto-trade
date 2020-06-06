@@ -1,37 +1,39 @@
 {
   "project_info": {
-    "project_number": "99783881285",
-    "firebase_url": "https://kotlin-fc3cc.firebaseio.com",
-    "project_id": "kotlin-fc3cc",
-    "storage_bucket": "kotlin-fc3cc.appspot.com"
+    "project_number": "252962425962",
+    "firebase_url": "https://crypto-trader-1ba6a.firebaseio.com",
+    "project_id": "crypto-trader-1ba6a",
+    "storage_bucket": "crypto-trader-1ba6a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:99783881285:android:e285037a30d2496376a92c",
+        "mobilesdk_app_id": "1:252962425962:android:571602f59b00e1cd",
         "android_client_info": {
           "package_name": "com.platzi.android.firestore"
         }
       },
       "oauth_client": [
         {
-          "client_id": "99783881285-2oapncpaelvfomhd24uq0amd24p84ue4.apps.googleusercontent.com",
+          "client_id": "252962425962-ub0oibfr4ru3j19tq5313lel6amt0ppn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAjZ4pLgapt-FQDeEGT-6dr7bO7cAkB9Sg"
+          "current_key": "AIzaSyDXg0gIZo434aDKCbe3zdf0sIzy7cEThRA"
         }
       ],
       "services": {
+        "analytics_service": {
+          "status": 1
+        },
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "99783881285-2oapncpaelvfomhd24uq0amd24p84ue4.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
         }
       }
     }
