@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
         firestoreService = FirestoreService(FirebaseFirestore.getInstance())
     }
 
-
+    // Hola mundo
     fun onStartClicked(view: View) {
         view.isEnabled = false
         auth.signInAnonymously()
