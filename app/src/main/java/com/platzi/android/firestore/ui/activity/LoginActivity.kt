@@ -44,7 +44,8 @@ class LoginActivity : AppCompatActivity() {
 
     // Hola mundo
     //Hola fredy
-    //HolaNando
+    //HolaNando+
+    //Again
     fun onStartClicked(view: View) {
         view.isEnabled = false
         auth.signInAnonymously()
